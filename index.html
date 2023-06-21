@@ -1,0 +1,359 @@
+<!DOCTYPE html />
+<html lang="pt-BR" />
+
+<head>
+    <!-- Configs -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Landing Page, Comprar website, Freelancer, Desenvolvedor de website" />
+    <meta name="description" content="Encomende seu website baratinho agora mesmo" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Website Title -->
+    <title>High Codes | Encomende seu website</title>
+
+    <!-- Logo Import -->
+    <link 
+        rel="shortcut icon" 
+        href="https://cdn.glitch.me/d269412c-7199-4b01-b7f4-d9da31015b3f/logo.png"
+        type="image/x-icon"
+    />
+
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- JS Imports -->
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header-navbar" id="navbar">
+        <a href="#" class="logo">
+            <span class="title-color">high</span>code<span style="font-family: 'Poppins', sans-serif; color: var(--primary); font-size: 50px;">.</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul>
+                <li>
+                    <a href="#" target="#">Início</a>
+                </li>
+
+                <li>
+                    <a href="#services">Serviços</a>
+                </li>
+
+                <li>
+                    <a href="#works">Trabalhos</a>
+                </li>
+
+                <li>
+                    <a href="https://api.whatsapp.com/send/?phone=5551997994264&text=Olá+João+Pedro!+Tudo+bem?+Vim+da+HighCodes&type=phone_number&app_absent=0">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <label>
+            <input type="checkbox" id="chk1">
+            <span class="theme-switch"></span>
+        </label>
+    </header>
+
+    <!-- Navbar Mobile -->
+    <div class="nav edit">
+        <ul class="nav-bar-mobile">
+            <li>
+                <a href="#works" class="nav__link">
+                    <div class="nav_link">
+                        <i class="fa fa-code"></i>
+                        <p>Trabalhos</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <div class="nav_link active-link-mobile">
+                        <i class="fa fa-home"></i>
+                        <p>Inicio</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send/?phone=5551997994264&text=Olá+João+Pedro!+Tudo+bem?+Vim+da+HighCodes&type=phone_number&app_absent=0" class="nav__link">
+                    <div class="nav_link">
+                        <i class="fa fa-address-book"></i>
+                        <p>Contato</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="nav__link">
+                    <label>
+                        <input type="checkbox" id="chk2">
+                        <div class="nav_link">
+                            <i class="fa fa-adjust"></i>
+                            <p>Tema</p>
+                        </div>
+                    </label>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- All Sections Config -->
+    <section class="section-all" id="all">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+
+        <!-- Hero -->
+        <div class="hero_content">
+            <div class="content_box">
+                <h2>Já pensou em ter um <br /><span class="title-color">site</span> do seu <span
+                        class="title-color">negócio</span>?</h2>
+                <p>
+                    <strong>Agora ficou fácil</strong>!
+                    <br />
+                    <br />
+                    Com a nossa equipe,
+                    você pode planejar o seu site e assim expandir seus negócios ainda mais!
+
+                </p>
+
+                <div>
+                    <a href="#" target="_blank">Orçamento</a>
+                    <a href="#" target="_blank" class="alt">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="imgBox">
+                <img src="assets/website-builder.svg" class="highcodes"
+                    alt="Ilustração de uma mulher construindo um site" />
+            </div>
+        </div>
+
+        <ul class="social">
+            <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+        </ul>
+
+        <!-- ############################################## -->
+
+        <!-- Who We Are -->
+        <section class="section-wwa">
+            <div class="title">
+                <h1>Quem Somos</h1>
+            </div>
+
+            <div class="row">
+                <div>
+                    <img class="teamImg" src="assets/engineering_team.svg" alt="" />
+                </div>
+                <div class="content">
+                    <p>
+                        <strong>Somos a High Code</strong>, uma empresa que desenvolve websites sob encomenda para
+                        empresas de pequeno e médio porte,
+                        com o objetivo de aprimorar o crescimento de negócios emergentes
+                        através da web.
+
+                        <br />
+                        <br />
+                        Potencializamos a presença online dos seus clientes em diversos seguimentos através de
+                        estratégias
+                        de otimização de sites, priorizando a qualidade.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section-services" id="services">
+            <div class="title flex">
+                <h1>Serviços</h1>
+                <a class="badge">
+                    <i class="fa fa-info-circle"></i>
+                    Se não achou o que procura, nos contate e detalhe a sua necessidade
+                </a>
+            </div>
+
+            <div class="services">
+                
+                <div class="card">
+                    <h1 class="number">1</h1>
+
+                    <div class="content">
+                        <h1>Website</h1>
+                        <p>
+                            Quer um website perfeito e que supra as necessidades do seu negócio?
+                            <a href="#">Contate-nos</a> e faça um orçamento gratuito agora mesmo!
+                        </p>
+
+                        <p>
+                            Já tem um website mas sente que ele não está atendendo aquilo que você
+                            precisa? Também reestruturamos websites.
+                        </p>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h1 class="number">2</h1>
+
+                    <div class="content">
+                        <h1>Design</h1>
+                        <p>
+                            Não tem ideia de um design que seja compatível com o seu negócio?
+                            Deixe conosco! Faremos com que a cara do seu negócio seja lembrada pela qualidade.
+                        </p>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works -->
+        <section class="section-works" id="works">
+            <div class="title flex">
+                <h1>Trabalhos</h1>
+                <a class="badge">
+                    <i class="fa fa-info-circle"></i>
+                    Alguns trabalhos da nossa equipe
+                </a>
+            </div>
+
+            <div class="works" style="position: relative;">
+
+                <div class="author">
+                    <img src="https://soufunck.github.io/me-portfolio/assets/soufunck.jpg" alt="" />
+                    <a href="https://soufunck.github.io/me-portfolio/" target="_blank">
+                        João Pedro
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </div>
+
+                <div class="works_list">
+                    <a href="https://riesen.glitch.me/" class="works_card" target="_blank" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 22, 36, 0.663)), 
+                            url(assets/riesen.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+                        Riesen
+                    </a>
+
+                    <a href="https://gimenis.adv.br/" target="_blank" class="works_card" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 31, 36, 0.5)), 
+                            url(https://soufunck.github.io/me-portfolio/assets/gimenis.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+
+                        Gimenis Advocacia
+                    </a>
+                </div>
+            </div>
+            
+            <div class="works">
+
+                <div class="author">
+                    <img src="assets/arthur.jpg" alt="" />
+                    <a href="https://arthur-filho.netlify.app/" target="_blank">
+                        Arthur
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </div>
+
+                <div class="works_list">
+                    <a href="https://coffees-delivery.netlify.app/" class="works_card" target="_blank" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 22, 36, 0.663)), 
+                            url(https://arthur-filho.netlify.app/assets/coffee-delivery.931681e5.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+                        Coffees Delivery
+                    </a>
+
+                    <a href="https://gimenis.adv.br/" target="_blank" class="works_card" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 31, 36, 0.5)), 
+                            url(https://arthur-filho.netlify.app/assets/auto-spo.4fe1c522.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+
+                        Auto Spo
+                    </a>
+                </div>
+            </div>
+
+            <div class="works">
+
+                <div class="author">
+                    <img src="assets/luan.jpg" alt="" />
+                    <a href="https://github.com/luanhenriquee" target="_blank">
+                        Luan
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                </div>
+
+                <div class="works_list">
+                    <a href="https://landing-page-luan.netlify.app/" class="works_card" target="_blank" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 22, 36, 0.663)), 
+                            url(assets/luan-lp.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+                        Landing Page
+                    </a>
+
+                    <a href="https://luanhenriquee.github.io/desafio-rocketblog/" target="_blank" class="works_card" style="background: linear-gradient(rgb(0, 0, 0), rgba(22, 31, 36, 0.5)), 
+                            url(https://camo.githubusercontent.com/25c880f87c0a79726bdfd561aed8727f057f8ec39f0126fd71f1fc3385276763/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3934333733313135373537353533323537352f3934363039363939373638333834333130322f756e6b6e6f776e2e706e67);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: initial;">
+
+                        RocketBlog
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <a href="#" class="logo">
+                <span class="title-color">high</span>code<span
+                    style="font-family: 'Poppins', sans-serif; color: var(--primary); font-size: 50px;">.</span>
+            </a>
+
+            <p style="color: var(--title-color);">Nos ajude a te ajudar!</p>
+        </div>
+
+        <div>
+            <ul class="social">
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
