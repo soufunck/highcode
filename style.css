@@ -214,7 +214,7 @@ header ul li a:hover {
     clip-path: circle(470px at left 1886px);
 }
 
-.circulo3 {
+.circle3 {
     position: absolute;
     top: 0;
     right: 0;
@@ -224,7 +224,7 @@ header ul li a:hover {
     clip-path: circle(350px at right 2600px);
 }
 
-.circulo4 {
+.circle4 {
     position: absolute;
     top: 0;
     left: 0;
@@ -397,6 +397,7 @@ header ul li a:hover {
 .title.flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .title h1 {
@@ -424,6 +425,71 @@ header ul li a:hover {
 
 .title .badge i {
     margin-right: 10px;
+}
+
+/* Team */
+.section-team {
+    position: relative;
+}
+
+/* container dos cards */
+.team_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* cards */
+.team_container .team_member:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team_container .team_member {
+    width: 100%;
+    height: 400px;
+
+    border-radius: 50px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid #000;
+
+    text-decoration: none;
+}
+
+.team_container .team_member:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 153, 156, 0.589) 0px 30px 60px -12px, rgba(0, 153, 156, 0.2) 0px 18px 36px -18px;
+}
+
+/* descrição dos cards */
+.team_container .team_member .team_member_desc {
+    margin: 300px 0;
+    padding: 16px 20px;
+
+    border-radius: 25px 25px 50px 50px;
+    
+    background: rgba(0, 0, 0, 0.637);
+}
+
+.team_container .team_member .team_member_desc h2 {
+    color: rgb(255, 255, 255);
+}
+
+/* função dos membros */
+.team_container .team_member .team_member_functions {
+    display: flex;
+}
+
+.team_container .team_member .team_member_functions p {
+    color: rgb(204, 204, 204);
+    margin-bottom: 20px;
+}
+
+.team_container .team_member .team_member_functions span {
+    margin: 0 5px;
+    color: white;
+    opacity: .1;
 }
 
 /* quem somos */
@@ -550,22 +616,23 @@ header ul li a:hover {
     background: #00999c27;
 }
 
-.section-works {
+.section-projects {
+    position: relative;
     margin-top: 100px;
 }
 
-.section-works .works {
+.section-projects .projects {
     margin-bottom: 100px;
 }
 
-.section-works .works .author {
+.section-projects .projects .author {
     display: flex;
     align-items: center;
 
     margin-bottom: 50px;
 }
 
-.section-works .works .author a {
+.section-projects .projects .author a {
     text-decoration: none;
     font-size: 24px;
 
@@ -574,7 +641,7 @@ header ul li a:hover {
     color: var(--title-color);
 }
 
-.section-works .works .author a i {
+.section-projects .projects .author a i {
     color: var(--primary);
     font-size: 16px;
     margin-left: 30px;
@@ -583,11 +650,11 @@ header ul li a:hover {
     transition: .2;
 }
 
-.section-works .works .author a:hover i {
+.section-projects .projects .author a:hover i {
     opacity: 1;
 }
 
-.section-works .works .author img {
+.section-projects .projects .author img {
     max-width: 80px;
     height: 80px;
 
@@ -597,12 +664,12 @@ header ul li a:hover {
     border-radius: 50%;
 }
 
-.section-works .works .works_list {
+.section-projects .projects .projects_list {
     display: flex;
     margin-bottom: 30px;
 }
 
-.section-works .works .works_card {
+.section-projects .projects .projects_card {
     padding: 100px 0;
     margin-right: 10px;
 
@@ -624,7 +691,7 @@ header ul li a:hover {
     transition: .4s;
 }
 
-.section-works .works .works_card:hover {
+.section-projects .projects .projects_card:hover {
     border-color: var(--primary);
 }
 
@@ -722,6 +789,21 @@ input[type="checkbox"]:checked~.theme-switch:before {
     }
 }
 
+@media screen and (max-width: 935px) {
+    .team_container {
+        flex-direction: column;
+    }
+
+    .team_container .team_member {
+        margin-right: 0;
+    }
+    
+    .team_container .team_member {
+        width: 100%;
+        background-position: initial;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .section-wwa .row p {
         max-width: 100%;
@@ -783,6 +865,10 @@ input[type="checkbox"]:checked~.theme-switch:before {
         flex-direction: column-reverse;
     }
 
+    .section-wwa .row img {
+        display: none;
+    }
+
     .section-wwa .row .content {
         width: 100%;
     }
@@ -815,11 +901,11 @@ input[type="checkbox"]:checked~.theme-switch:before {
         width: 500px;
     }
 
-    .section-works .works .works_list {
+    .section-projects .projects .projects_list {
         flex-direction: column;
     }
     
-    .section-works .works .works_card {
+    .section-projects .projects .projects_card {
         margin-bottom: 30px;
     }
 }
