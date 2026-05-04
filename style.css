@@ -568,17 +568,13 @@ header ul li a:hover {
     font-family: 'Inter', sans-serif;
 
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
 
     text-decoration: none;
 }
 
 .logo .title-color {
     color: var(--title-color);
-}
-
-.logo img {
-    max-width: 80px;
 }
 
 /* 
@@ -596,7 +592,8 @@ header ul li a:hover {
 
     overflow-x: scroll;
     white-space: nowrap;
-    scrollbar-width: 5px;
+
+    scrollbar-width: 8px;
 }
 
 .team_container .team_member:not(:last-child) {
